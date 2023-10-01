@@ -1,0 +1,42 @@
+import java.util.*;
+public class Number {
+    
+    public static void main(String args[]){
+        int n= 99;
+        System.out.println("-------❓Guess the number between 1 to 100❓--------");
+        Scanner sc= new Scanner(System.in);
+        int a=sc.nextInt();
+        
+        int attempts =0;
+        boolean correctattempt=false;
+        while(!correctattempt){
+
+            System.out.println("Enter your guess");
+
+            a =sc.nextInt();
+            attempts++;
+
+        
+        if(a<99){
+            System.out.println("Try out a higher number 🔼");
+        }
+        
+        else if(a>99){
+                System.out.println("Try out a lower number🔽");
+        }
+
+            
+            else{
+                correctattempt=true;
+                System.out.println("-----💎Congratulations you guessed it Correct💎-------");
+                System.out.println("Your Guess is "+a);
+            }
+            
+
+        }
+    }
+        
+        
+
+        
+}
